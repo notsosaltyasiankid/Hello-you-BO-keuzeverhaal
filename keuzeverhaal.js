@@ -3,15 +3,164 @@ const player = {
   naam: ' ',
 }
 
-var naam = readlineSync.question ("Wat is je naam?")
+const naam = readlineSync.question ("Wat is je naam? ")
 console.log (`Hallo, ${naam}! welkom bij mijn keuzeverhaal`)
 console.log("")
 console.log(`Dit verhaal gaat over ${naam} die probeert te overleven tegen een slasher.`)
 console.log("")
-console.log("Je bent op vakantie met een paar vrienden in zwitserland diep in het bos. Jij en je vrienden hebben een vakantie huis gehuurt voor een paar dagen. Het is nu 22:00 en al je vrienden zijn al aan het slapen want ze willen morgen vroeg weggaan. Jij bent nog de laatste die gaat slapen dus je doet alles maar dicht")
+console.log(`${naam} is op een vakantie met een paar vrienden in zwitserland diep in het bos. Hij/zij en zijn vrienden hebben een vakantie huisje gehuurt voor een paar dagen. Het is nu 22:00 en al je vrienden zijn al aan het slapen want ze willen morgen vroeg weggaan. Jij bent nog de laatste die gaat slapen dus je doet alles maar dicht`)
 console.log("")
+console.log("Net toen hij/zij klaar was met alles afsluiten ging je naar je kamer toe en wordt er opeens op de deur geklopt.")
+const deel1 = readlineSync.question(`Wat gaat ${naam} doen? A: Je gaat naar de deur B: Je nergeert het en gaat vervolgens slapen `)
+if (deel1 == "A" || deel1 == "a") { 
+  console.log("")
+  console.log(`${naam} gaat met een verbazende gezicht richting de deur toe, langs de gangen zie je door de raam een figuur van een mens maar je kan niet zien wie het is omdat hij een lange jas draagt. `)
+  console.log("")
+  const deel2 = readlineSync.question(`Nu je voor de deur staat denk je de heletijd aan die man die nu aan de anderekant van de deur staat. Wat ga ${naam} doen? A: Je opent de deur B: Je gaat weer door de raam kijken. `)
+  if (deel2 == "A" ||deel2 == "a") {
+    console.log("")
+    console.log(`${naam} opent de deur en je ziet niemand. Je gaat snel een beetje naar buiten kijken om te gaan zien of de persoon misschien weg was gegaan maar net voor je 1 stap naar buiten doet voel je iets heel hard naar je kop toe gaan en valt flauw neer`)
+    console.log("")
+    console.log (`######################################`)
+    console.log ("GEKIDNAPPED EINDE")
+    console.log (`######################################`);
+  } else {
+    console.log("") 
+    console.log(`${naam} loopt terug naar de raam waar hij de man zag. Toen hij/zij aankwam bij het raam zag ze iemand die probeert te verstoppen. Die man had een grote knuppel bij zich en was klaar om iemand te gaan raken die de deur opende. ${naam} opende de raam en zei wat hij aan het doen was. Hij draaide zich snel om om vervolgens renend naar ${naam} te komen.`)
+    console.log("")
+    console.log("                               .=:                                                                                                                        ")
+    console.log("                            .=+*****#**-.                                                                                                                 ")
+    console.log("                         =**####%%%%%%###**=                                                                                                              ")
+    console.log("                    .+*##%%%%%%@@%%@@@@%#%%#%#*                                                                                                           ")
+    console.log("                   .*#%%%@@@@@@@@@@@@%#%@@@%%%%*                                                                                                          ")
+    console.log("                  .*%%%%@@@@@@@@@@@%#%@@@@@@@%%#*                                                                                                         ")
+    console.log("                 .#%%%@@@@@@@@@@@@%%@@@@@@@@@@@%%+                                                                                                        ")
+    console.log("                 +%%@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%:                                                                                                       ")
+    console.log("                 *%@@@@@@%%@@@@@@@@@@@@@@@@@@%@%%#+                                                                                                       ")
+    console.log("                 #@@@@@%##%%@%@@@@@@@@@@@%*@@@@%##%.                                                                                                      ")
+    console.log("                 %%@@@@%%%%#%@@@@##**%@@@@@#@%##@%@=                                                                                                      ")
+    console.log("                 +%*:. .-+%@@@@@@##%%#@@@@@#%%@@%-.@.                                                                                                     ")
+    console.log("                 -..:...    +@@@@@##%@@@@@@%%%#%#==@@                                                                                                     ")
+    console.log("                .:.:......     .=%%%@%@@@@%%#**++:.  *.                                                                                                   ")
+    console.log("                .-:.::-=---....    .+@@@@@%*++*++=                                                                                                        ")
+    console.log("                 -:-=+**+===-::..      :*%#++***+-                                                                                                        ")
+    console.log("       ---::.:.  :****####*+++=-::....     .=#%#+:                                                                                                        ")
+    console.log("     -:-+==--:::.. :=*#######**+=----:....     .:.                                                                                                        ")
+    console.log("    .=#+-:-::=+======--=+*#####****+====-::...                                                                                                            ")
+    console.log("    :#+-==::---==+=====--=-++*#######**+++==-::...                                                                                                        ")
+    console.log("     =#-:-=-::...::--==+===-=-=++#%#####****++=-::....                                                                                                    ")
+    console.log("        -===-::.....::-===---------=+#%#####*+++++==-:....                                                                                                ")
+    console.log("         -====--:........::::::::::::--+#%%#*##****++==-::...                                                                                             ")
+    console.log("         :===---::.........:::.:-==+**#%%*++*#%####***+++==-::..                                                                                          ")
+    console.log("          ======--::...:::.::-=++**##%%%###*#**%%%%####*+*+===-::..                                                                                       ")
+    console.log("          -=+++==--:::-::-----=+=+**###%%%#####%%@@@@@%##***++===-::...                                                                                   ")
+    console.log("         .:+++++---==------===+++++**#####*********+***%%@%%##**++==--::..                                                                                ")
+    console.log("        ...-+**+++=====----=====+++********+++++++====+*+++=====*##*++==-:::..                                                                            ")
+    console.log("       ...:-=****+++==============+******++======-=--+====-:::..::.  ....:--=--..                                                                         ")
+    console.log("       ..::-=++*##**++==========+++**+++++=====-=--=+------:::...::.         .:---:..                                                                     ")
+    console.log("       .::---===+*****+++====--=*+++++++===-----==++=--:-:::::::.....          ..-+=--:..                                                                 ")
+    console.log("     ..::::------=+*%#**+++===--======------====+*+--------::::::......            +#+==--:.                                                              ")
+    console.log("    ..::-=------:-=***++**+*+==--===-:---===+++**=---:::::::::::::::.:...  ..  ..    .=***+=-:...                                                         ")
+    console.log("  ....:--==------++====+###***+----====-=++++*#*==---:::::::-:.:-::::::...........       .=***+=-:..          ...                                         ")
+    console.log("....::----=++===+*++===*##%%####*+++*##*+=+*##+==----:::::-:::-----:-:::..:::.::.....        .-***+=-:..    .......                                       ")
+    console.log("..:::--:--==+***#######%%%%%%%%%%%%%%%%###%%#++===-----::-----====+=---=-::::::-::.::..           :+#*+=-:...........                                     ")
+    console.log("----------=====+=*#%@@@@@@@@@@@@@@@%##%%#**++++======------:::--===+++==**=-==-===----::::..             .-#*=-:::..:...                                  ")
+    console.log("-----------=====+***###%%%%%%%%%%%%##****++++++===========--:::---=++*+==*#*+=-++===------:::          ...-===---::::::-===                               ")
+    console.log("-----------==-==+++****############***++++++++==+=====-=-===---:---=+*+==*%%*+=+**++=---==-:-. ..        -++++++-:......  .::                             ")
+    console.log("----=------======+++++*****#*#*****++++++++=+++++==+++===-===---:::--=**+=#@@*+=***+==--==---:....         :=**+:..      ...:.                            ")
+    console.log("-----=----========+++++****++*****++++==++++++===+++++========+====----===+%@%*+*#*++==-==----.:-::           .-:.          ..                            ")
+    console.log("--------===========++++++++++***+++++=+==++++===+++++++==========+++++===+*#%%#****+===-=------.:--:.           .-*#@@@%*=.                               ")
+    console.log("--==---============+++++==+**+++++++======+++++++++++*++===++=====++**++++#%%@#****+++=--------:.---: .        =*=.     .=%*:                             ")
+    console.log("==----==============++===++++++*++++==+==++++++++++++++++==++==+==++*****+*@@@%#++***++==-=-===:.:---: ..     -*:.....     =#=                            ")
+    console.log("=---=======++++======++++++++++++++++====+++*+*++++++++++===+++++=+++***#*+*@@%*+*****+==-=====-:::---:.::.  ..  .--:.      -#=                           ")
+    console.log("===+++===+++++++======+++++++++++++++====+++++**+++++***+=-=+***++++++*+++**@@@%******++======+=-::---=::--.:          +=    -+.                          ")
+    console.log("+==+++===+++++++++===+=+++++++++++++======++++*******+*+====++***++++***+++#@@@@#***#**+++=======-::--=-:---:.:......:-..*:  :+-                          ")
+    console.log("++++++==++++++++=======++++++++++++==+==++++++***********+===+*+++++++***++*#@@@%####*****++==+++=----==---==:...:--:::=-:+- .=-                          ")
+    console.log("")
+    console.log("")
+    const deel3 = readlineSync.question(`${naam} sluit gauw de raam en maakt het opslot. Wat moet ${naam} nu doen? A: Ren via een achterdeur en probeer de stad te vinden B: ${naam} vestopt zich ergens in het huis. `)
+    if (deel3 == "A" || deel3 == "a") {
+      console.log("")
+      console.log(`Net voordat hij/zij een geluid hoort van dan de raam is gebroken probeert ${naam} weg te renen van de man. De man ziet dat je weg probeert te renen en achtervolgt je. Na een tijdje rennen struikel je over een klein steen en de man komt aan met zijn knuppel om je vervolgens in de hoofd gelijk te slaan. ${naam} valt flauw`)
+      console.log("")
+      console.log (`######################################`)
+      console.log ("GESTRUIKELD EINDE")
+      console.log (`######################################`);
 
-
-    
-
+    } else {
+      console.log("")
+      console.log(`${naam} verstop zich onder het bed. Je hoort allemaal geluid van de man die je probeert te vinden. Na een tijdje hoor je niks meer en denkt dat hij weg is.`)
+      const deel4 = readlineSync.question(`Wat moet ${naam} nu doen? A: Langer verstoppen B: Proberen om weg te rennen voor hulp. `)
+      if (deel4 == "A" || deel4 == "a") {
+        console.log("")
+        console.log("Hij/zij besluit zich wat langer te verstoppen want je weet het maar nooit")
+        console.log("")
+        console.log("Het voelt alsof hij/zij nu al een paar uur daar zit en wilt eruit voordat je opeens voetstappen hoort dat richting je kamer gaat. De deur gaat open en je ziet de voeten van de man die je probeert dood te maken")
+        console.log("")
+        console.log("De man doorzoekt de hele kamer en komt uiteindelijk bij het bed en kijkt eronder.")
+        console.log("")
+        console.log("`######################################`")
+        console.log("GEVONDEN EINDE")
+        console.log("`######################################`");
+      } else {
+        console.log("")
+        console.log(`${naam} besluit zich wat langer te verstoppen totdat hij/zij niks meer hoort`)
+        console.log("")
+        console.log("Na een tijdje hoor je dat al het geluid weg is en probeert weg te rennen.")
+        console.log("")
+        console.log("Het voelt alsof je rent voor dagen door het bos. Het stopt maar niet alleen maar meer bomen en meer natuur, totdat je opeens verderop licht ziet. HET IS EEN KLEIN DORPJE DAT JE VOND.")
+        console.log("")
+        console.log("Net toen je het dorp in kwam ging je snel nog achter je kijken en schrok een beetje want die man zat je de heletijd te stalken maar toen hij zag je het dorp in kwam ging hij langzamer hand weer terug het bos in.")
+        console.log("")
+        console.log("`######################################`")
+        console.log("DORP EINDE")
+        console.log("`######################################`");
+      }
+    }
+  }
+ } 
+ else {
+  console.log("")
+  console.log(`${naam} besluit het te negeren en gaat maar slapen. Je had een goede droom over hoe je zat te vliegen door de stad heen maar de droom stopt opeen en schrikt wakker`)
+  console.log("")
+  console.log(`Je hoort dat iemand heeft ingebroken maar wie het ook is je hoort voetstappen naar je toekomen`)
+  console.log("")
+  const deel5 = readlineSync.question(`Wat gaat ${naam} doen? A:Probeer om door je eigen raam heen te gaan en door het bos rennen B: verstop je. `)
+  if (deel5 == "A" || deel5 == "a") {
+    console.log("")
+    console.log(`Net voordat de deur open gaat hoort probeert ${naam} weg te renen van de man. De man ziet dat je weg probeert te renen en achtervolgt je. Na een tijdje rennen struikel je over een klein steen en de man komt aan met zijn knuppel om je vervolgens in de hoofd gelijk te slaan. ${naam} valt flauw`)
+    console.log("")
+    console.log (`######################################`)
+    console.log ("GESTRUIKELD EINDE")
+    console.log (`######################################`);
+  } else {
+    console.log("")
+    console.log("Je gaat maar wat snel in de kast verstoppen en hoort de man de deur instormen maar gaat gelijk weer weg doordat hij niemand daar ziet.")
+    console.log("")
+    console.log(`${naam} ziet opeens dat hij/zij een wapen met hem in de kast zit. Het is een normale pistool.`)
+    console.log("")
+    const deel6 = readlineSync.question(`Wat gaat ${naam} doen? A: Probeer de man weg te schrikken met het pistool B: langer verstoppen. `)
+    if (deel6 == "A" || deel6 == "a") {
+      console.log("")
+      console.log(`Je gaat met het pistool uit de kast en wacht totdat de man vlakbij de kamer weer is. Wanneer je hem weer vlakbij hoort schiet je een paar waarschuwing schoten.`)
+      console.log("")
+      console.log("Na die waarschuwing schoten hoor je hem weg gaan uit het huis weer het bos in")
+      console.log("")
+      console.log(`######################################`)
+      console.log("AFGESCHRIKT EINDE")
+      console.log(`######################################`)
+    } else {
+      console.log("")
+      console.log("Hij/zij besluit zich wat langer te verstoppen want je weet het maar nooit")
+      console.log("")
+      console.log("Het voelt alsof hij/zij nu al een paar uur daar zit en wilt eruit voordat je opeens voetstappen hoort dat richting je kamer gaat. De deur gaat open en je ziet de voeten van de man die je probeert dood te maken")
+      console.log("")
+      console.log("De man doorzoekt de hele kamer en komt uiteindelijk bij de kast en kijkt erin.")
+      console.log("")
+      console.log("`######################################`")
+      console.log("GEVONDEN EINDE")
+      console.log("`######################################`");
+    }
+  }
+ }
 }
