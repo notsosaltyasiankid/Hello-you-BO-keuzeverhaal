@@ -26,7 +26,6 @@ if (deel1 == "A" || deel1 == "a") {
     console.log (`######################################`);
   } else {
     console.log("") 
-    console.log(`${naam} loopt terug naar de raam waar hij de man zag. Toen hij/zij aankwam bij het raam zag ze iemand die probeert te verstoppen. Die man had een grote knuppel bij zich en was klaar om iemand te gaan raken die de deur opende. ${naam} opende de raam en zei wat hij aan het doen was. Hij draaide zich snel om om vervolgens renend naar ${naam} te komen.`)
     console.log("")
     console.log("                               .=:                                                                                                                        ")
     console.log("                            .=+*****#**-.                                                                                                                 ")
@@ -77,6 +76,8 @@ if (deel1 == "A" || deel1 == "a") {
     console.log("+==+++===+++++++++===+=+++++++++++++======++++*******+*+====++***++++***+++#@@@@#***#**+++=======-::--=-:---:.:......:-..*:  :+-                          ")
     console.log("++++++==++++++++=======++++++++++++==+==++++++***********+===+*+++++++***++*#@@@%####*****++==+++=----==---==:...:--:::=-:+- .=-                          ")
     console.log("")
+    console.log("")
+    console.log(`${naam} loopt terug naar de raam waar hij de man zag. Toen hij/zij aankwam bij het raam zag ze iemand die probeert te verstoppen. Die man had een grote knuppel bij zich en was klaar om iemand te gaan raken die de deur opende. ${naam} opende de raam en zei wat hij aan het doen was. Hij draaide zich snel om om vervolgens renend naar ${naam} te komen.`)
     console.log("")
     const deel3 = readlineSync.question(`${naam} sluit gauw de raam en maakt het opslot. Wat moet ${naam} nu doen? A: Ren via een achterdeur en probeer de stad te vinden B: ${naam} vestopt zich ergens in het huis. `)
     if (deel3 == "A" || deel3 == "a") {
